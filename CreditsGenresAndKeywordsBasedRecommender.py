@@ -2,7 +2,7 @@
 import pandas as pd
 
 #Filmlerin Metadata verilerinin yüklenmesi
-metadata = pd.read_csv('Desktop/Tavsiye-Sistemleri-Recommender-System-/DataSets/movies_metadata.csv', low_memory=False)
+metadata = pd.read_csv('Desktop/Tavsiye-Sistemleri-Recommender-System/DataSets/movies_metadata.csv', low_memory=False)
 
 #En az alınabilecek oy sayısı(m) hesaplanması
 m = metadata['vote_count'].quantile(0.90)
@@ -53,8 +53,8 @@ def get_recommendations(title, cosine_sim=cosine_sim):
     return q_movies['title'].iloc[movie_indices]
 
 # Anahtar kelimelerin ve kredilerin yüklenmesi
-credits = pd.read_csv('Desktop/Tavsiye-Sistemleri-Recommender-System-/DataSets/credits.csv')
-keywords = pd.read_csv('Desktop/Tavsiye-Sistemleri-Recommender-System-/DataSets/keywords.csv')
+credits = pd.read_csv('Desktop/Tavsiye-Sistemleri-Recommender-System/DataSets/credits.csv')
+keywords = pd.read_csv('Desktop/Tavsiye-Sistemleri-Recommender-System/DataSets/keywords.csv')
 
 #Hatalı Idli satırların kaldırılması
 #metadata = metadata.drop([19730, 29503, 35587])

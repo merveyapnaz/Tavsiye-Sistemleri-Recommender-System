@@ -2,7 +2,7 @@
 import pandas as pd
 
 #Filmlerin Metadata verilerinin yüklenmesi
-metadata = pd.read_csv('Desktop/Tavsiye-Sistemleri-Recommender-System-/DataSets/movies_metadata.csv', low_memory=False)
+metadata = pd.read_csv('Desktop/Tavsiye-Sistemleri-Recommender-System/DataSets/movies_metadata.csv', low_memory=False)
 
 #Filmlerin ortalama derecesinin (C) hesaplanması
 C = metadata['vote_average'].mean()

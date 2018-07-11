@@ -2,7 +2,7 @@
 import pandas as pd
 
 #Filmlerin Metadata verilerinin yüklenmesi
-metadata = pd.read_csv('Desktop/Tavsiye-Sistemleri-Recommender-System-/DataSets/movies_metadata.csv', low_memory=False)
+metadata = pd.read_csv('Desktop/Tavsiye-Sistemleri-Recommender-System/DataSets/movies_metadata.csv', low_memory=False)
 
 #En az alınabilecek oy sayısı(m) hesaplanması
 m = metadata['vote_count'].quantile(0.90)
