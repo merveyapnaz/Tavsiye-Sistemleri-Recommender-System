@@ -100,7 +100,7 @@ print(q_movies[['title', 'vote_count', 'vote_average', 'score']].head(15))
 
 Programın Çalıştırılması:
 
-SS1
+![SimpleRecommenders](https://github.com/merveyapnaz/Tavsiye-Sistemleri-Recommender-System/blob/master/Screenshots/SimpleRecommenders.PNG)
 
 ### Content Based Recommender
 
@@ -195,7 +195,7 @@ def get_recommendations(title, cosine_sim=cosine_sim):
 ```
 Programın Çalıştırılması:
 
-SS2
+![PlotDescriptionBasedRecommender](https://github.com/merveyapnaz/Tavsiye-Sistemleri-Recommender-System/blob/master/Screenshots/PlotDescriptionBasedRecommender.PNG)
 
 Sistem benzer açıklamalara sahip filmleri bulmakta işe yarasa da tavsiyelerin kalitesi o kadar da iyi durmuyor.
 
@@ -324,8 +324,7 @@ indices = pd.Series(q_movies.index, index=q_movies['title'])
 
 Artık, ikinci argüman olarak cosine_sim2 matrisini göndererek get_recommendations() fonksiyonu yeniden kullanılabilir.
 
-SS3
-
+![CreditsGenresAndKeywordsBasedRecommender](https://github.com/merveyapnaz/Tavsiye-Sistemleri-Recommender-System/blob/master/Screenshots/CreditsGenresAndKeywordsBasedRecommender.PNG)
 
 
 
